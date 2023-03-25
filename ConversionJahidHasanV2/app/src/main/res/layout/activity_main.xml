@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        app:srcCompat="@mipmap/ic_imagebackground_foreground" />
+
+    <TextView
+        android:id="@+id/dollar_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp"
+        android:text="Enter Dollars:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/dollar_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollar_label"
+        android:background="@color/teal_200"
+        android:elegantTextHeight="true"
+        android:hint="Enter Dollar Value"
+        android:padding="16dp"
+
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/euro_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dollar_input"
+        android:layout_marginTop="16dp"
+        android:text="Euros:"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/euro_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/euro_label"
+        android:background="@android:color/holo_green_light"
+        android:elegantTextHeight="true"
+        android:enabled="false"
+        android:hint="Converted Euros"
+        android:padding="16dp"
+        android:textColor="@color/black" />
+
+    <Button
+        android:id="@+id/convert_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Convert"
+        android:layout_below="@+id/euro_result"/>
+</RelativeLayout>
