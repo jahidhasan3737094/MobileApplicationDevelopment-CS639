@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">EmployeeApp Jahid Hasan</string>
+    <string name="add">Add</string>
+    <string name="last_name">Enter Last name</string>
+    <string name="first_name">Enter First name</string>
+    <string name="add_new_employee">Add New Employee:</string>
+</resources>
